@@ -1,0 +1,16 @@
+.nav-bar{
+    width: 100%;
+    padding: 15px 30px;
+}
+
+.nav-bar .nav-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-icon p{
+    margin: 2px;
+}
