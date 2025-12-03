@@ -1,6 +1,17 @@
 .nav-bar{
-    width: 100%;
+    width: auto;
     padding: 15px 30px;
+    border: 1px solid black;
+    margin-top: 64px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.nav-bar .nav-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 .nav-bar .nav-icon{
@@ -8,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px;
 }
 
 .nav-icon p{
