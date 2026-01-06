@@ -1,25 +1,28 @@
 .nav-bar{
-    width: auto;
-    padding: 15px 30px;
-    border: 1px solid black;
-    margin-top: 64px;
-    position: absolute;
+    margin-top: 100px;
+    position: fixed;
     top: 0;
     bottom: 0;
+    width: 100%;
+    display: flex;
 }
 
 .nav-bar .nav-list{
     display: flex;
-    flex-direction: column;
-    padding: 0;
+    flex-direction: row;
+    padding: 15px 30px;
+    width: 10%;
+    background: rgb(0, 81, 255);
 }
 
 .nav-bar .nav-icon{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
     padding: 10px;
+    color: white;
 }
 
 .nav-icon p{

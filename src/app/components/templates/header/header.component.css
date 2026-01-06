@@ -6,11 +6,14 @@
     right: 0;
     left: 0;
     background: transparent;
-    padding-top: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px #000;
+    height: 100px;
 }
 
 .header .logo{
     max-height: 60px;
+    margin: 25px 0 20px 0;
 }
 
 .header .title-group{
