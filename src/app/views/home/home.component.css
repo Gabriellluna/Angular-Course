@@ -1,0 +1,16 @@
+.home{
+    padding: 15px;
+    width: 100%;
+    background: #FFFFFF;
+    gap: 15px;
+}
+
+.home .title{
+    font-size: 3rem;
+    font-weight: 450;
+}
+
+.home .subtitle{
+    color: rgb(66, 66, 66);
+    font-size: 1rem;
+}

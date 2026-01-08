@@ -1,13 +1,13 @@
     <div class="nav-bar">
         <div class="nav-list">
             <ul class="no-dots">
-                <li class="nav-icon">
+                <li class="nav-icon" routerLink="/">
                     <i class="material-icons">
                         home
                     </i>
                     <p>Ínicio</p>
                 </li>
-                <li class="nav-icon">
+                <li class="nav-icon" routerLink="/products">
                     <i class="material-icons">
                         storefront
                     </i>
@@ -15,7 +15,8 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <app-home></app-home>
+        <div class="content">
+            <!-- roteamento aqui: -->
+             <router-outlet></router-outlet>
         </div>
     </div>

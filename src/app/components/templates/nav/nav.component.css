@@ -25,6 +25,15 @@
     color: white;
 }
 
+.nav-icon{
+    cursor: pointer;
+}
+
 .nav-icon p{
     margin: 2px;
+}
+
+.nav-bar .content{
+    padding: 16px;
+    width: 90%;
 }
