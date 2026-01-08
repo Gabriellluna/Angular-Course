@@ -8,4 +8,9 @@
     right: 0;
     background: transparent;
     color: #000000;
+    letter-spacing: .5px;
+}
+
+.footer .material-icons{
+    padding: 5px;
 }
