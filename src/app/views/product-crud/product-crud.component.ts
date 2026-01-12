@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-product-crud',
@@ -6,6 +6,16 @@ import { Component } from '@angular/core';
   templateUrl: './product-crud.component.html',
   styleUrl: './product-crud.component.css'
 })
-export class ProductCrudComponent {
+export class ProductCrudComponent implements OnInit {
+
+  atributoaleatorio  = "kakaka"
+
+  ngOnInit(): void {
+    
+  }
+
+  fazerAlgo(): void{
+    console.log("Fiz algo!")
+  }
 
 }
