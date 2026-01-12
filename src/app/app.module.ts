@@ -16,6 +16,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive'
 import { MatButtonModule } from '@angular/material/button';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatButtonModule } from '@angular/material/button';
     HomeComponent,
     ProductCrudComponent,
     RedDirective,
-    ForDirective
+    ForDirective,
+    ProductCreateComponent,
   ],
   imports: [
     BrowserModule,
