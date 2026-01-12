@@ -1,7 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  --primary-color: rgb(0, 81, 255);
+}
+
+
 html, body { height: 100%; margin: 0; padding: 0; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .no-dots{list-style-type: none;}
 .d-flex{display: flex;}
 ul, li, p{padding: 0; margin:0;}
+
+button{
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+    color: #FFFFFF;
+}
+
+.save{
+    background: var(--primary-color);
+}
+
+.cancel{
+    background: red;
+}

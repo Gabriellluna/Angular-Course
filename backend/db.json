@@ -1,0 +1,20 @@
+{
+    "products": [
+        {   
+            "id": 1,
+            "name": "caneta BIC azul",
+            "price": 5.89
+
+        },
+        {
+            "id": 2,
+            "name": "Estojo Carana",
+            "price": 10
+        },
+        {
+            "id": 3,
+            "name": "Lousa Magnética",
+            "price": 20
+        }
+    ]
+}
