@@ -7,7 +7,7 @@ import { Directive, OnInit, Input, ViewContainerRef, TemplateRef } from '@angula
 export class ForDirective implements OnInit {
   
 
-  @Input('appForEm') numbers!: number[]
+  @Input('appForPiroca') numbers!: number[]
   @Input('appForName') texto!: string[]
 
   constructor(
