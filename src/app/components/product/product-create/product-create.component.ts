@@ -13,12 +13,17 @@ export class ProductCreateComponent implements OnInit {
   
   constructor(private productService: ProductService, private router: Router){}
 
-  produto : Product = {name:"Sabão em pó", price:15.99, id:15}
+  produto : Product = {name:'', price: 0.00 }
+
+  show(){
+    console.log(this.produto)
+  }
 
   createProduct() : void{
     this.productService.create(this.produto).subscribe(() => {
       this.productService.showMessage("Produto criado com sucesso")
       this.router.navigate(['products'])
+      this.show()
     })
   }
 

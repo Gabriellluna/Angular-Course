@@ -19,6 +19,11 @@
       "id": 15,
       "name": "Sabão em pó",
       "price": 15.99
+    },
+    {
+      "id": "448b",
+      "name": "Shampoo Palmolive",
+      "price": "24.50"
     }
   ]
 }

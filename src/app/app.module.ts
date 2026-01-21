@@ -12,14 +12,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive'
 import { MatButtonModule } from '@angular/material/button';
-import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ProductModule } from './product.module';
 
 @NgModule({
   declarations: [
@@ -28,13 +27,12 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductCrudComponent,
     RedDirective,
     ForDirective,
-    ProductCreateComponent,
   ],
   imports: [
     BrowserModule,
+    ProductModule,
     AppRoutingModule,
     MatToolbarModule,
     MatSidenavModule,
