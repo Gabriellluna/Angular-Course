@@ -13,7 +13,6 @@ import {MatListModule} from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
 import { RedDirective } from './directives/red.directive';
-import { ForDirective } from './directives/for.directive'
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
@@ -28,7 +27,6 @@ import { ProductModule } from './product.module';
     NavComponent,
     HomeComponent,
     RedDirective,
-    ForDirective,
   ],
   imports: [
     BrowserModule,

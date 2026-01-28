@@ -13,18 +13,17 @@ export class ProductCreateComponent implements OnInit {
   
   constructor(private productService: ProductService, private router: Router){}
 
-  produto : Product = {name:'', price: 0.00 }
-
-  show(){
-    console.log(this.produto)
-  }
+  produto : Product = {name:'', price: undefined }
 
   createProduct() : void{
-    this.productService.create(this.produto).subscribe(() => {
-      this.productService.showMessage("Produto criado com sucesso")
-      this.router.navigate(['products'])
-      this.show()
-    })
+    if(this.produto.name != null && this.produto.price != null){
+      this.productService.create(this.produto).subscribe(() => {
+        this.productService.showMessage("Produto criado com sucesso")
+        this.router.navigate(['products'])
+      })
+    }else{
+      this.productService.showMessage("É necessário preencher os campos antes de enviar o formulário!")
+    }
   }
 
   cancelProduct() : void{

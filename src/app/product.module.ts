@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
@@ -7,21 +7,33 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { WhiteDirective } from './directives/white.directive';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ForDirective } from './directives/for.directive';
+import { CurrencyMaskModule } from "ng2-currency-mask";
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt'
 
-
+registerLocaleData(localePt)
 
 @NgModule({
   declarations: [
     ProductCreateComponent,
     ProductCrudComponent,
-    WhiteDirective
+    WhiteDirective,
+    ProductReadComponent,
+    ForDirective
   ],
   imports: [
     CommonModule,
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatCardModule
-  ]
+    MatCardModule,
+    CurrencyMaskModule
+  ],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  }]
 })
 export class ProductModule { }

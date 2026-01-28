@@ -1,0 +1,27 @@
+<div class="product-table">
+    <table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let produto of produtos">
+            <th>{{produto.id}}</th>
+            <th>{{produto.name}}</th>
+            <th>{{produto.price | currency : 'BRL'}}</th>
+            <th>
+                <i class="material-icons">
+                    edit
+                </i>
+                <i class="material-icons">
+                    delete
+                </i>
+            </th>
+        </tr>
+    </tbody>
+</table>
+</div>

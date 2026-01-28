@@ -16,14 +16,24 @@
       "price": 20
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Sabão em pó",
       "price": 15.99
     },
     {
-      "id": "448b",
-      "name": "Shampoo Palmolive",
+      "id": "ffb7",
+      "name": "Instituto Federal De São Paulo Campus São Paulo",
       "price": "24.50"
+    },
+    {
+      "id": "cc8d",
+      "name": "Gabriel's",
+      "price": "51515"
+    },
+    {
+      "id": "8b29",
+      "name": "televisão",
+      "price": 5444.44
     }
   ]
 }

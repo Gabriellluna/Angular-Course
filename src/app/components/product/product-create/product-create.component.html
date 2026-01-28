@@ -4,12 +4,12 @@
     <mat-card-title appWhite>Novo Produto</mat-card-title>
     <mat-card-subtitle appWhite>Insira as informações para a criação de um novo produto</mat-card-subtitle>
     <form>
-        <mat-form-field appWhite>
-            <input matInput placeholder="Nome" [(ngModel)] = "produto.name" name="name"/>
-        </mat-form-field>
-        <mat-form-field appWhite>
-            <input matInput placeholder="Preço" [(ngModel)] = "produto.price" name="price"/>
-        </mat-form-field>
+        <div class="field">
+            <input placeholder="Nome" [(ngModel)] = "produto.name" name="name" />
+        </div>
+        <div class="field">
+            <input currencyMask [options]="{prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left'}" placeholder="Preço" [(ngModel)] = "produto.price" name="price" type="text"/>
+        </div>
     </form>
 
 </mat-card>

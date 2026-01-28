@@ -1,0 +1,27 @@
+.product-table{
+    padding: 40px;
+    width: 100%;
+}
+
+.product-table table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 90%;
+    box-shadow: 1px 1px 25px #535353;
+}
+
+.product-table thead th{
+    padding: 15px 20px;
+    border: 1px solid #818181;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.product-table tbody th{
+    padding: 15px;
+    border: 1px solid #818181;
+}
+
+.material-icons{
+    cursor: pointer;
+}
