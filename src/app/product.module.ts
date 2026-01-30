@@ -12,6 +12,8 @@ import { ForDirective } from './directives/for.directive';
 import { CurrencyMaskModule } from "ng2-currency-mask";
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt'
+import { ProductEdit } from './components/product/product-edit/product-edit';
+import { AppRoutingModule } from './app-routing.module';
 
 registerLocaleData(localePt)
 
@@ -21,6 +23,7 @@ registerLocaleData(localePt)
     ProductCrudComponent,
     WhiteDirective,
     ProductReadComponent,
+    ProductEdit,
     ForDirective
   ],
   imports: [
@@ -29,7 +32,8 @@ registerLocaleData(localePt)
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
-    CurrencyMaskModule
+    CurrencyMaskModule,
+    AppRoutingModule
   ],
   providers: [{
     provide: LOCALE_ID,

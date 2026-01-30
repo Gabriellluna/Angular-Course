@@ -1,0 +1,20 @@
+<p>product-edit works!</p>
+
+   <form>
+        <div class="field">
+            <input placeholder="Nome" [(ngModel)] = "produto.name" name="name" />
+        </div>
+        <div class="field">
+            <input currencyMask [options]="{prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left'}" placeholder="Preço" [(ngModel)]="produto.price" name="price" type="text"/>
+        </div>
+
+        <button class="save" (click)="updateProduct()">
+            Salvar
+        </button>
+
+
+        <button class="cancel" (click)="cancelProduct()">
+            Cancelar
+        </button>
+
+    </form>

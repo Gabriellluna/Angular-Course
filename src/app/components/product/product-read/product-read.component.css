@@ -25,3 +25,34 @@
 .material-icons{
     cursor: pointer;
 }
+
+.modal{
+    width: 50%;
+    height: auto;
+    background: #535353;
+    margin: auto;
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.modal h4{
+    color: #FFFFFF;
+    padding: 15px;
+    font-weight: 400;
+}
+
+.active{
+    display: block;
+}
+
+.affirmative{
+    background: green;  
+}
+
+.negative{
+    background: red;
+}

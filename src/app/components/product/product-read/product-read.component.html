@@ -14,14 +14,22 @@
             <th>{{produto.name}}</th>
             <th>{{produto.price | currency : 'BRL'}}</th>
             <th>
-                <i class="material-icons">
+                <i class="material-icons" routerLink="/products/edit/{{produto.id}}">
                     edit
                 </i>
-                <i class="material-icons">
+                
+                <i class="material-icons" (click)="openModal(produto)">
                     delete
                 </i>
             </th>
         </tr>
     </tbody>
 </table>
+<div class="modal" [class.active] = "isModalOpen">
+    <h4>Confirma a exclusão desse produto?</h4>
+    <div>
+        <button class="affirmative" (click)="deleteProduct()">Sim</button>
+        <button class="negative" (click)="cancel()">Não</button>
+    </div>
+</div>
 </div>
