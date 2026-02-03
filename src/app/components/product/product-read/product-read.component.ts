@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
+import { HeaderService } from '../../templates/footer/header.service';
 import { Product } from '../product.model';
 import { Router, RouterLink } from '@angular/router';
 
@@ -10,7 +11,11 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './product-read.component.css'
 })
 export class ProductReadComponent implements OnInit {
-  constructor(private productService: ProductService, private router: Router){}
+  constructor(private productService: ProductService, private router: Router, private headerService : HeaderService){
+    this.headerService.headerData.icon="storefront"
+    this.headerService.headerData.title="Produtos"
+    this.headerService.headerData.route="/products"
+  }
 
   produtos: Product[] = []
 
