@@ -22,10 +22,6 @@ button{
     color: #FFFFFF;
 }
 
-.save{
-    background: var(--primary-color);
-}
-
 .cancel{
     background: red;
 }

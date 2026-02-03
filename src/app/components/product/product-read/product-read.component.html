@@ -1,4 +1,8 @@
 <div class="product-table">
+    <button class="save" routerLink="/products/create">
+        Novo Produto
+    </button>
+
     <table>
     <thead>
         <tr>
@@ -27,7 +31,7 @@
 </table>
 <div class="modal" [class.active] = "isModalOpen">
     <h4>Confirma a exclusão desse produto?</h4>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex">
         <button class="affirmative" (click)="deleteProduct()">Sim</button>
         <button class="negative" (click)="cancel()">Não</button>
     </div>

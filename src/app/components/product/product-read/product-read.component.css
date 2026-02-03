@@ -1,6 +1,21 @@
 .product-table{
     padding: 40px;
     width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.product-table::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #00000050;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: auto;
 }
 
 .product-table table{
@@ -38,6 +53,7 @@
     right: 0;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid #1d1d1d81;
 }
 
 .modal h4{
@@ -66,4 +82,10 @@
 
 .justify-content-center{
     justify-content: center;
+}
+
+.save{
+    background: var(--primary-color);
+    padding: 19px;
+    margin-bottom: 25px;
 }
