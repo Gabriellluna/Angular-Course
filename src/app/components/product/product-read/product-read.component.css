@@ -1,21 +1,20 @@
 .product-table{
-    padding: 40px;
     width: 100%;
     position: relative;
-    height: 100vh;
 }
 
 .product-table::before{
     content: " ";
     position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #00000050;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: auto;
+    height: 100vh;
+    width: 100vw;
+    background: #00000031;
+    display: none;
+    z-index: 1;
+}
+
+.product-table.ativo::before{
+    display: block;
 }
 
 .product-table table{
@@ -44,7 +43,7 @@
 .modal{
     width: 50%;
     height: auto;
-    background: #d8d8d8;
+    background: #ffffff;
     margin: auto;
     display: none;
     position: fixed;
@@ -54,6 +53,7 @@
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #1d1d1d81;
+    z-index: 10;
 }
 
 .modal h4{
@@ -87,5 +87,5 @@
 .save{
     background: var(--primary-color);
     padding: 19px;
-    margin-bottom: 25px;
+    margin: 60px;
 }
