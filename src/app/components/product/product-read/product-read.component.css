@@ -29,7 +29,7 @@
 .modal{
     width: 50%;
     height: auto;
-    background: #535353;
+    background: #d8d8d8;
     margin: auto;
     display: none;
     position: fixed;
@@ -37,12 +37,15 @@
     left: 0;
     right: 0;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .modal h4{
-    color: #FFFFFF;
+    color: #000000;
     padding: 15px;
     font-weight: 400;
+    font-size: x-large;
+    text-align: center;
 }
 
 .active{
@@ -55,4 +58,12 @@
 
 .negative{
     background: red;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
 }
